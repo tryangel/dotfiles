@@ -275,6 +275,7 @@ main() {
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         if ! $skipQuestions; then
+		echo "not update_content"
         #    ./update_content.sh
         fi
 

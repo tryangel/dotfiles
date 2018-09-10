@@ -27,9 +27,7 @@ install_plugins() {
 
     execute \
         ". $HOME/.bash.local \
-            && cd $HOME/.vim/plugins/tern_for_vim \
-            && npm install" \
-        "Install plugins (extra installs for 'tern_for_vim')"
+        "Install plugin (extra installs)"
 
 }
 

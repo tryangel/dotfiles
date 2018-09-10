@@ -275,7 +275,7 @@ main() {
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         if ! $skipQuestions; then
-            ./update_content.sh
+        #    ./update_content.sh
         fi
 
     fi

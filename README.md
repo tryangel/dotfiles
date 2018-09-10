@@ -14,8 +14,8 @@ understand [what it does](src/os/setup.sh). Seriously, **DON'T**!)
 
 | OS | Snippet |
 |:---|:---|
-| `macOS` | `bash -c "$(curl -LsS https://raw.github.com/alrra/dotfiles/master/src/os/setup.sh)"` |
-| `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/alrra/dotfiles/master/src/os/setup.sh)"` |
+| `macOS` | `bash -c "$(curl -LsS https://raw.github.com/tryangel/dotfiles/master/src/os/setup.sh)"` |
+| `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/tryangel/dotfiles/master/src/os/setup.sh)"` |
 
 That's it! :sparkles:
 
@@ -186,7 +186,7 @@ settings from `~/.vimrc`.
 
 If you decide to fork this project, don't forget to substitute my
 username with your own in the [`setup` snippets](#setup) and [in the
-`setup` script](https://github.com/alrra/dotfiles/blob/1503cf23ef23f6e31342b140bcd246625160b94f/src/os/setup.sh#L3).
+`setup` script](https://github.com/tryangel/dotfiles/blob/1503cf23ef23f6e31342b140bcd246625160b94f/src/os/setup.sh#L3).
 
 ## Update
 

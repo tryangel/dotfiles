@@ -146,7 +146,7 @@ call vundle#begin("~/.vim/plugins")
     Plugin 'VundleVim/Vundle.vim'
 
     Plugin 'altercation/vim-colors-solarized'
-    plugin 'chrisbra/unicode.vim'
+    Plugin 'chrisbra/unicode.vim'
     Plugin 'editorconfig/editorconfig-vim'
     Plugin 'godlygeek/tabular'
     Plugin 'kien/ctrlp.vim'
@@ -176,23 +176,6 @@ call vundle#end()
 " (disabling it was required by Vundle).
 
 filetype on
-
-
-" ----------------------------------------------------------------------
-" | Plugins - Emmet                                                    |
-" ----------------------------------------------------------------------
-
-" Redefine trigger key for Emmet.
-" http://docs.emmet.io/cheat-sheet/
-
-let g:user_emmet_leader_key="<C-E>"
-
-" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-" Load custom Emmet snippets.
-" http://docs.emmet.io/customization/snippets/
-
-let g:user_emmet_settings = webapi#json#decode(join(readfile(expand("~/.vim/snippets/emmet.json")), "\n"))
 
 
 " ----------------------------------------------------------------------

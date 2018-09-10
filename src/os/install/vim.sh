@@ -26,7 +26,7 @@ install_plugins() {
     # Install additional things required by some plugins.
 
     execute \
-        ". $HOME/.bash.local \
+        ". $HOME/.bash.local" \
         "Install plugin (extra installs)"
 
 }

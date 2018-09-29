@@ -114,6 +114,8 @@ set wildmenu                   " Enable enhanced command-line
                                " match highlighted).
 
 set winminheight=0             " Allow windows to be squashed.
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936
 
 
 " ----------------------------------------------------------------------
@@ -168,6 +170,8 @@ call vundle#begin("~/.vim/plugins")
     Plugin 'tpope/vim-unimpaired'
     Plugin 'wellle/targets.vim'
     Plugin 'google/yapf'
+    Plugin 'davidhalter/jedi-vim'
+    Plugin 'ervandew/supertab'
 
 call vundle#end()
 

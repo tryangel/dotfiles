@@ -7,12 +7,12 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 update
-upgrade
+# upgrade
 
 ./build-essentials.sh
 # ./../nvm.sh
 
-./browsers.sh
+# ./browsers.sh
 # ./compression_tools.sh
 ./git.sh
 ./image_tools.sh

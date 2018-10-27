@@ -20,6 +20,7 @@ source_bash_files() {
     local file=""
     local i=""
 
+    open_pyenv
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     cd "$(dirname "$(readlink "${BASH_SOURCE[0]}")")" \

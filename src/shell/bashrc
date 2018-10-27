@@ -3,11 +3,3 @@
 [ -n "$PS1" ] \
     && . ~/.bash_profile
 
-function open_pyenv()
-{
-    export PATH="/home/rhding/.pyenv/bin:$PATH"
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-}
-open_pyenv
-

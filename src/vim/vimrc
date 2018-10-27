@@ -199,7 +199,6 @@ if jedi#init_python()
     autocmd User vim-pyenv-deactivate-post call s:jedi_auto_force_py_version()
   augroup END
 endif
-
 " ----------------------------------------------------------------------
 " | Plugins - Indent Guides                                            |
 " ----------------------------------------------------------------------
@@ -487,6 +486,10 @@ let mapleader = ","
 
 " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+" Switch CWD to the directory of the open buffer
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
+" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 " [,* ] Search and replace the word under the cursor.
 
 nmap <leader>* :%s/\<<C-r><C-w>\>//<Left>
@@ -662,6 +665,12 @@ set statusline+=\ (%P)\        " Percent through file
 "
 "  [1] [master] [vim/vimrc][vim][unix:utf-8]            17,238/381 (59%)
 
+" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+" Make VIM remember position in file after reopen
+if has("autocmd")
+   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 
 " ----------------------------------------------------------------------
 " | Local Settings                                                     |

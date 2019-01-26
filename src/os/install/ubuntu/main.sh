@@ -22,4 +22,6 @@ update
 ./tmux.sh
 ./../vim.sh
 
+curl https://pyenv.run | bash
+
 ./cleanup.sh
